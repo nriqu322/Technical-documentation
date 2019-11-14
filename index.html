@@ -6,29 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
   <title>Technical Documentation Page - Microverse Project Marcos & Luis</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    @media screen and (max-width: 700px) {
+      nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      nav a {
+        float: left;
+      }
+
+      div.main-doc {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      nav a {
+        text-align: center;
+        float: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <nav id="navbar">
-    <header>HTML DOCUMENTATION</header>
-    <a href="#introHTML" class="nav-link">Introduction to HTML</a>
-    <a href="#multimedia" class="nav-link">Multimedia and embedding</a>
-    <a href="#tables" class="nav-link">HTML tables</a>
-    <a href="#forms" class="nav-link">HTML forms</a>
-    <a href="#solveProblems" class="nav-link">Use HTML to solve common problems</a>
-  </nav>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>HTML DOCUMENTATION</header>
+      <a href="#Introduction_to_HTML" class="nav-link">Introduction to HTML</a>
+      <a href="#Multimedia_and_embedding" class="nav-link">Multimedia and embedding</a>
+      <a href="#HTML_tables" class="nav-link">HTML tables</a>
+      <a href="#HTML_forms" class="nav-link">HTML forms</a>
+      <a href="#HTML_to_solve_problems" class="nav-link">HTML to solve problems</a>
+    </nav>
 
-  <div class="main-doc">
-    <div class="main-section" id="introHTML">
-      <section id="introHTML">
-        <header></header>
+    <div class="main-doc">
+      <section class="main-section" id="Introduction_to_HTML">
+        <header>Introduction to HTML</header>
         <p>At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to
           give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?),
           structure a document into logical sections (Does it have a header? Three columns of content? A navigation
           menu?), and embed content such as images and videos into a page. This module will introduce the first two of
           these, and introduce fundamental concepts and syntax you need to know to understand HTML.</p>
-        <h1>Anatomy of an HTML element</h1>
+        <h3>Anatomy of an HTML element</h3>
         <p>The opening tag: This consists of the name of the element (in this case, p), wrapped in opening and closing
           angle brackets. This states where the element begins or starts to take effect — in this case where the start
           of the paragraph is.
@@ -41,48 +65,117 @@
                   <p>My cat is very grumpy</p>
           </code>
 
-        <li></li>
-      </section>
-    </div>
-    <div class="main-section" id="multimedia">
-      <section id="">
-        <header></header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
-      </section>
-    </div>
-    <div class="main-section" id="tables">
-      <section id="tables">
-        <header></header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
-      </section>
-    </div>
-    <div class="main-section" id="forms">
-      <section id="forms">
-        <header></header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
-      </section>
-    </div>
-    <div class="main-section" id="solveProblems">
-      <section id="solveProblems">
-        <header></header>
-        <p></p>
-        <p></p>
-        <code></code>
-        <li></li>
-      </section>
-    </div>
 
-  </div>
+      </section>
+      <section class="main-section" id="Multimedia_and_embedding">
+        <header>Multimedia and embedding</header>
+        <p>
+          We've looked at a lot of text so far in this course, but the web would be really boring only using text. Let's
+          start looking at how to make the web come alive with more interesting content! This module explores how to use
+          HTML to include multimedia in your web pages, including the different ways that images can be included, and
+          how
+          to embed video, audio, and even entire webpages.
+        </p>
+        <p>
+          We've looked at a lot of text so far in this course, but the web would be really boring only using text. Let's
+          start looking at how to make the web come alive with more interesting content! This module explores how to use
+          HTML to include multimedia in your web pages, including the different ways that images can be included, and
+          how
+          to embed video, audio, and even entire webpages.
+        </p>
+        <p>
+          We've looked at a lot of text so far in this course, but the web would be really boring only using text. Let's
+          start looking at how to make the web come alive with more interesting content! This module explores how to use
+          HTML to include multimedia in your web pages, including the different ways that images can be included, and
+          how
+          to embed video, audio, and even entire webpages.
+        </p>
+        <code>
+            <p>My dog is very grumpy</p>
+        </code>
+      </section>
+      <section class="main-section" id="HTML_tables">
+        <header>HTML tables</header>
+        <p>
+          A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for
+          just
+          this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on
+          the
+          web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your
+          favorite dinosaurs or football team. This module takes you through all you need to know about structuring
+          tabular data using HTML.
+        </p>
+        <p>
+          A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for
+          just
+          this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on
+          the
+          web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your
+          favorite dinosaurs or football team. This module takes you through all you need to know about structuring
+          tabular data using HTML.
+        </p>
+        <code>
+            <p>My mouse is very grumpy</p>
+        </code>
+      </section>
+      <section class="main-section" id="HTML_forms">
+        <header>HTML forms</header>
+        <p>
+          This module provides a series of articles that will help you master HTML forms. HTML forms are a very powerful
+          tool for interacting with users; however, for historical and technical reasons, it's not always obvious how to
+          use them to their full potential. In this guide, we'll cover all aspects of HTML forms, from structure to
+          styling, from data handling to custom widgets.
+        </p>
+        <p>
+          This module provides a series of articles that will help you master HTML forms. HTML forms are a very powerful
+          tool for interacting with users; however, for historical and technical reasons, it's not always obvious how to
+          use them to their full potential. In this guide, we'll cover all aspects of HTML forms, from structure to
+          styling, from data handling to custom widgets.
+        </p>
+        <p>
+          This module provides a series of articles that will help you master HTML forms. HTML forms are a very powerful
+          tool for interacting with users; however, for historical and technical reasons, it's not always obvious how to
+          use them to their full potential. In this guide, we'll cover all aspects of HTML forms, from structure to
+          styling, from data handling to custom widgets.
+        </p>
+        <code>
+            <p>My elephant is very grumpy</p>
+        </code>
+        <li></li>
+      </section>
+      <section class="main-section" id="HTML_to_solve_problems">
+        <header>HTML to solve problems</header>
+        <p>
+          The most basic application of HTML is document structure. If you're new to HTML you should start with this.
+        </p>
+        <ol>
+          <li>How to create a basic HTML document</li>
+          <li>How to divide a webpage into logical sections</li>
+          <li>How to set up a proper structure of headings and paragraphs</li>
+        </ol>
+        <p>
+          The most basic application of HTML is document structure. If you're new to HTML you should start with this.
+        </p>
+        <ol>
+          <li>How to create a basic HTML document</li>
+          <li>How to divide a webpage into logical sections</li>
+          <li>How to set up a proper structure of headings and paragraphs</li>
+        </ol>
+        <p>
+          The most basic application of HTML is document structure. If you're new to HTML you should start with this.
+        </p>
+        <ol>
+          <li>How to create a basic HTML document</li>
+          <li>How to divide a webpage into logical sections</li>
+          <li>How to set up a proper structure of headings and paragraphs</li>
+        </ol>
+        <code>
+            <p>My bee is very grumpy</p>
+        </code>
+      </section>
 
+    </div>
+  </main>
   <script src="js/index.js"></script>
 </body>
 
