@@ -1,4 +1,4 @@
-# Tribute Page PRoject
+# Tribute Page Project
 This is a HTML project clone of a technical documentation page for leraning basic semanthic HTML and CSS media queries for responsive design
 
 ![screenshot](/Screenshot.png)
